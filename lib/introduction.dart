@@ -61,6 +61,7 @@ class Introduction extends StatelessWidget {
                 child: Text(
                   "Skip for now",
                   style: TextStyle(color: Colors.white, fontSize: 18),
+
                 ),
               ),
             ],
