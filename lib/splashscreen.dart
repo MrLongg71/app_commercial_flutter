@@ -1,11 +1,12 @@
+import 'package:commercial/chooseconnect.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_swiper/flutter_swiper.dart';
 
 class Introduction extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var screen = MediaQuery.of(context).size;
-
     return Scaffold(
       backgroundColor: Color(0xff0001FC),
       body: SingleChildScrollView(
@@ -43,11 +44,12 @@ class Introduction extends StatelessWidget {
                   child: RaisedButton(
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8.0),
-
-
                     ),
                     color: Colors.white,
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context)
+                          .pushReplacementNamed('/splashscreen_slider');
+                    },
                     child: Text(
                       "Let's start",
                       style: TextStyle(color: Color(0xff0001FC), fontSize: 18),
@@ -60,16 +62,37 @@ class Introduction extends StatelessWidget {
               ),
               Padding(
                 padding: EdgeInsets.only(bottom: 10),
-                child: Text(
-                  "Skip for now",
-                  style: TextStyle(color: Colors.white, fontSize: 18),
-
-                ),
+                child: GestureDetector(
+                  onTap: (){
+                    Navigator.of(context).pushReplacementNamed('/createaccount');
+                  },
+                  child: Text(
+                    "Skip for now",
+                    style: TextStyle(color: Colors.white, fontSize: 18),
+                  ),
+                )
               ),
             ],
           ),
         ),
       ),
+    );
+  }
+}
+
+class _Swiper extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Swiper(
+      itemBuilder: (BuildContext context, int index) {
+        return new Image.network(
+          "http://via.placeholder.com/288x188",
+          fit: BoxFit.fill,
+        );
+      },
+      itemCount: 10,
+      viewportFraction: 0.8,
+      scale: 0.9,
     );
   }
 }
