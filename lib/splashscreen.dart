@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 
-class Introduction extends StatelessWidget {
+class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var screen = MediaQuery.of(context).size;
@@ -64,7 +64,7 @@ class Introduction extends StatelessWidget {
                 padding: EdgeInsets.only(bottom: 10),
                 child: GestureDetector(
                   onTap: (){
-                    Navigator.of(context).pushReplacementNamed('/createaccount');
+                    Navigator.of(context).pushReplacementNamed('/sign-up');
                   },
                   child: Text(
                     "Skip for now",

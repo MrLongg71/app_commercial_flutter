@@ -1,6 +1,7 @@
+import 'package:commercial/account/sign-in/sign_in.dart';
+import 'package:commercial/account/sign-up/sign_up.dart';
 import 'package:commercial/chooseconnect.dart';
-import 'package:commercial/create_account.dart';
-import 'package:commercial/login_page.dart';
+import 'package:commercial/home/home.dart';
 import 'package:commercial/splashscreen.dart';
 import 'package:commercial/splashscreen_slider.dart';
 import 'package:flutter/material.dart';
@@ -14,12 +15,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: Introduction(),
       initialRoute: ('/'),
       routes: <String,WidgetBuilder>{
+        '/': (context) => SplashScreen(),
+        '/home': (context) => HomeView(),
         '/chooseconnect':(context) => ChooseConnect(),
-        '/createaccount':(context)=>CreateAccount(),
-        '/login':(context)=>LoginPage(),
+        '/sign-up':(context)=>SignUpView(),
+        '/sign-in':(context)=>SignInView(),
         '/splashscreen_slider':(context)=>SplashScreenSlider(),
       },
     );
