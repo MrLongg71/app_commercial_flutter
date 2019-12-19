@@ -61,16 +61,16 @@ class SplashScreen extends StatelessWidget {
                 height: 80,
               ),
               Padding(
-                padding: EdgeInsets.only(bottom: 10),
-                child: GestureDetector(
-                  onTap: (){
-                    Navigator.of(context).pushReplacementNamed('/sign-up');
-                  },
-                  child: Text(
-                    "Skip for now",
-                    style: TextStyle(color: Colors.white, fontSize: 18),
-                  ),
-                )
+                  padding: EdgeInsets.only(bottom: 10),
+                  child: GestureDetector(
+                    onTap: (){
+                      Navigator.of(context).pushReplacementNamed('/sign-up');
+                    },
+                    child: Text(
+                      "Skip for now",
+                      style: TextStyle(color: Colors.white, fontSize: 18),
+                    ),
+                  )
               ),
             ],
           ),

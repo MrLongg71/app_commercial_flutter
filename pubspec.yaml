@@ -56,8 +56,15 @@ flutter:
     - iconfind.png
     - icongoogle.png
     - iconhome.png
-
+    - imagesmartphone.png
+    - imagesmartphone2.png
     - imageproduc.png
+    - laptop1.png
+    - laptop2.png
+    - laptop3.png
+    - laptop4.png
+    - laptop5.png
+    - laptop6.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -1,7 +1,9 @@
 import 'package:commercial/account/sign-in/sign_in.dart';
 import 'package:commercial/account/sign-up/sign_up.dart';
+import 'package:commercial/listcategories.dart';
 import 'package:commercial/chooseconnect.dart';
 import 'package:commercial/home/home.dart';
+import 'package:commercial/listlaptop.dart';
 import 'package:commercial/splashscreen.dart';
 import 'package:commercial/splashscreen_slider.dart';
 import 'package:flutter/material.dart';
@@ -17,14 +19,17 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       initialRoute: ('/'),
       routes: <String,WidgetBuilder>{
-        '/': (context) => SplashScreen(),
+        '/': (context) => HomeView(),
         '/home': (context) => HomeView(),
         '/chooseconnect':(context) => ChooseConnect(),
         '/sign-up':(context)=>SignUpView(),
         '/sign-in':(context)=>SignInView(),
         '/splashscreen_slider':(context)=>SplashScreenSlider(),
+        '/categories':(context)=>ListCategories(),
+        '/listlaptop':(context)=>ListLaptop(),
       },
     );
+
   }
 }
 

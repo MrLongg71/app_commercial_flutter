@@ -1,7 +1,7 @@
 import 'package:commercial/account/model/user.dart';
 import 'package:commercial/model/rest_error.dart';
-import 'package:commercial/network/EndPoint.dart';
 import 'package:commercial/network/api.dart';
+import 'package:commercial/network/endpoint.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:dio/dio.dart';
