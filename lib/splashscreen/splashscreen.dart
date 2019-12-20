@@ -1,4 +1,4 @@
-import 'package:commercial/chooseconnect.dart';
+import 'package:commercial/homescreen/chooseconnect.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';

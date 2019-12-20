@@ -65,6 +65,9 @@ flutter:
     - laptop4.png
     - laptop5.png
     - laptop6.png
+    - product1.png
+    - product2.png
+    - product3.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -3,9 +3,11 @@ import 'package:commercial/widget/function.dart' as prefix0;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+
 import 'package:flutter/widgets.dart';
 
 class HomeView extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
 //    var screen = MediaQuery.of(context).size;
@@ -195,43 +197,6 @@ class HomeView extends StatelessWidget {
             ],
           ),
         ),
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Color(0xffEFF5FB),
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.home,
-              color: Colors.black,
-            ),
-            title: Text("a"),
-            backgroundColor: Color(0xffEFF5FB),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.search,
-              color: Colors.black,
-            ),
-            title: Text("a"),
-            backgroundColor: Color(0xffEFF5FB),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.add_shopping_cart,
-              color: Colors.black,
-            ),
-            title: Text("a"),
-            backgroundColor: Color(0xffEFF5FB),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.person_outline,
-              color: Colors.black,
-            ),
-            title: Text("a"),
-            backgroundColor: Color(0xffEFF5FB),
-          )
-        ],
       ),
     );
   }
