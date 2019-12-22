@@ -1,10 +1,11 @@
 import 'package:commercial/account/sign-in/sign_in.dart';
 import 'package:commercial/account/sign-up/sign_up.dart';
+
 import 'package:commercial/homescreen/home/dashboard.dart';
 import 'package:commercial/homescreen/listcategories.dart';
 import 'package:commercial/homescreen/chooseconnect.dart';
 
-import 'package:commercial/homescreen/listlaptop.dart';
+import 'package:commercial/homescreen/search/listlaptop.dart';
 import 'package:commercial/homescreen/productdetail.dart';
 import 'package:commercial/homescreen/search/search.dart';
 import 'package:commercial/splashscreen/splashscreen.dart';
@@ -12,6 +13,9 @@ import 'package:commercial/splashscreen/splashscreen_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import 'homescreen/account/accountinformation.dart';
+import 'homescreen/account/email.dart';
+import 'homescreen/card/trackingproduct.dart';
 import 'homescreen/home/home.dart';
 
 void main() => runApp(MyApp());
@@ -39,6 +43,9 @@ class MyApp extends StatelessWidget {
         '/listlaptop':(context)=>ListLaptop(),
         '/search':(context)=>SearchScreen(),
         '/productdetail': (context)=>ProductDetail(),
+        '/tracking':(context)=>TrackingProduct(),
+        '/accountinformation':(context)=>AccountInformation(),
+        '/email': (context)=>Email(),
       },
     );
 

@@ -1,4 +1,5 @@
-import 'package:commercial/homescreen/account/account.dart';
+import 'package:commercial/homescreen/account/acount.dart';
+
 import 'package:commercial/homescreen/card/card.dart';
 import 'package:commercial/homescreen/home/home.dart';
 import 'package:commercial/homescreen/search/search.dart';
@@ -14,14 +15,14 @@ class _DashBoardScreenState extends State<DashBoardScreen> {
   List<Widget>listScreen = [
     HomeView(),
     SearchScreen(),
-    AccountScreen(),
     CardScreen(),
+    AccountScreen(),
+
   ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
-
         currentIndex: index,
         items: [
           BottomNavigationBarItem(

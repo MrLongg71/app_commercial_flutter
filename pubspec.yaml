@@ -68,6 +68,7 @@ flutter:
     - product1.png
     - product2.png
     - product3.png
+    - iconadmin.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
